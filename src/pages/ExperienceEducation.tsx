@@ -1,4 +1,3 @@
-import React from 'react';
 import Experience from '../components/Experience';
 import Education from '../components/Education';
 
