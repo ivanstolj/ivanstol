@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
   text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #e0e0e0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #007acc;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+  color: #666;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.section {
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.section p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.skills,
+.experience,
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills .skill,
+.experience .job,
+.education .school {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.skills .skill h3,
+.experience .job h3,
+.education .school h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.skills .skill p,
+.experience .job p,
+.education .school p {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+
+  .skills .skill,
+  .experience .job,
+  .education .school {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav {
+  background-color: #007acc;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  padding: 2em;
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #ffcc00;
 }
