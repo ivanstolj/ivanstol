@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 import Home from './pages/Home';
+import Projects from './pages/Home';
+
 
 const App: React.FC = () => {
   return (
@@ -11,6 +13,7 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
     </Router>
